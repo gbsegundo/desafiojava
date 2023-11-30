@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "26024d60-fe7a-45e5-8050-604ec96051cc",
+		"name": "Desafio-java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30027833"
+	},
+	"item": [
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Vanessa Segundo\",\r\n    \"dataNascimento\": \"1980-11-26 00:00:00\",\r\n    \"cpf\": \"221.003.468-06\",\r\n    \"funcionario\": true,\r\n    \"gerente\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pessoa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Membros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPessoa\": \"1\",\r\n    \"idProjeto\": \"13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/membros",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"membros"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
